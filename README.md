@@ -53,7 +53,12 @@
 - torch_geometric=1.3.0
 - install with pyg - https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 - https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html install torch-sparse and torch-scatter with pip from this link.
-
+- torch              1.10.1
+- torch-cluster      1.6.0
+- torch-geometric    1.3.0
+- torch-scatter      2.0.9
+- torch-sparse       0.6.15
+- torch-spline-conv  1.2.1
 ## Code Base Structure
 The code base structure is explained below: 
 - **train_cv.py**: Cross-validation script for training unimodal and multimodal networks. This script will save evaluation metrics and predictions on the train + test split for each epoch on every split in **checkpoints**.
