@@ -174,8 +174,8 @@ def regularize_MM_weights(model, reg_type=None):
 def regularize_MM_omic(model, reg_type=None):
     l1_reg = None
 
-    if model..__hasattr__('omic_net'): #module is not supported with newer version
-        for W in model..omic_net.parameters(): #module is not supported with newer version
+    if model..__hasattr__('omic_net'): #module is not supported with newer version of pyg and pytorch
+        for W in model..omic_net.parameters(): #module is not supported with newer version of pyg and pytorch
             if l1_reg is None:
                 l1_reg = torch.abs(W).sum()
             else:
