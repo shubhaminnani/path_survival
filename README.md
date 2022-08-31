@@ -1,5 +1,6 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Diagnosis and Prognosis
 
+This Repository is cloned from https://github.com/mahmoodlab/PathomicFusion. For any other information please refer to main repository.
 
 <details>
 <summary>
