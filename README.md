@@ -51,6 +51,8 @@
 - CUDA + cuDNN (Tested on CUDA 10.1 and cuDNN 7.5. CPU mode and CUDA without CuDNN may work with minimal modification, but untested.)
 - torch>=1.1.0
 - torch_geometric=1.3.0
+- install with pyg - https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+
 
 ## Code Base Structure
 The code base structure is explained below: 
