@@ -52,7 +52,7 @@
 - torch>=1.1.0
 - torch_geometric=1.3.0
 - install with pyg - https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
-
+- https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html install torch-sparse and torch-scatter with pip from this link.
 
 ## Code Base Structure
 The code base structure is explained below: 
