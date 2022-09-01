@@ -250,7 +250,7 @@ class NormalizeEdgesV2(object):
 
 class GraphNet(torch.nn.Module):
     def __init__(self, features=1036, nhid=128, grph_dim=32, nonlinearity=torch.tanh, 
-        dropout_rate=0.25, GNN='GCN', use_edges=0, pooling_ratio=0.20, act=None, label_dim=1, init_max=True):
+        dropout_rate=0.25, GNN=GCNConv, use_edges=0, pooling_ratio=0.20, act=None, label_dim=1, init_max=True):
         super(GraphNet, self).__init__()
 
         self.dropout_rate = dropout_rate
@@ -258,7 +258,7 @@ class GraphNet(torch.nn.Module):
         self.act = act
 
         self.conv1 = SAGEConv(features, nhid)
-        self.pool1 = SAGPooling(nhid, ratio=pooling_ratio, gnn=GNN)#, nonlinearity=nonlinearity)
+        self.pool1 = SAGPooling(nhid, ratio=pooling_ratio, gnn=GNN)#, nonlinearity=nonlinearity) #new version dont require String
         self.conv2 = SAGEConv(nhid, nhid)
         self.pool2 = SAGPooling(nhid, ratio=pooling_ratio, gnn=GNN)#, nonlinearity=nonlinearity)
         self.conv3 = SAGEConv(nhid, nhid)
