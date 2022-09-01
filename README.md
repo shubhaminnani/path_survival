@@ -52,14 +52,8 @@ This Repository is cloned from https://github.com/mahmoodlab/PathomicFusion. For
 - CUDA + cuDNN (Tested on CUDA 10.1 and cuDNN 7.5. CPU mode and CUDA without CuDNN may work with minimal modification, but untested.)
 - torch>=1.1.0
 - torch_geometric=1.3.0
-- install with pyg - https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
-- https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html install torch-sparse and torch-scatter with pip from this link.
-- torch              1.10.1
-- torch-cluster      1.6.0
-- torch-geometric    1.3.0
-- torch-scatter      2.0.9
-- torch-sparse       0.6.15
-- torch-spline-conv  1.2.1
+
+- To run the CNN+SNN model - install the environment with conda `env create -f environment.yml`
 ## Code Base Structure
 The code base structure is explained below: 
 - **train_cv.py**: Cross-validation script for training unimodal and multimodal networks. This script will save evaluation metrics and predictions on the train + test split for each epoch on every split in **checkpoints**.
